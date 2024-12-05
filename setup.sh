@@ -40,7 +40,7 @@ docker_composeCLI_url="https://github.com/docker/compose/releases/download/v2.20
 run_command "curl -SL \"${docker_composeCLI_url}\" -o \$DOCKER_CONFIG/cli-plugins/docker-compose" "Downloading Docker Compose CLI Plugin"
 
 # Verify Docker Compose installation
-run_command "docker-compose --version" "Verifying Docker Compose installation"
+run_command "docker compose --version" "Verifying Docker Compose installation"
 
 # Set executable permissions for Docker Compose CLI Plugin
 run_command "chmod +x \$DOCKER_CONFIG/cli-plugins/docker-compose" "Setting executable permissions for Docker Compose CLI Plugin"
