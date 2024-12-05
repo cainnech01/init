@@ -46,7 +46,7 @@ run_command "docker compose --version" "Verifying Docker Compose installation"
 run_command "chmod +x \$DOCKER_CONFIG/cli-plugins/docker-compose" "Setting executable permissions for Docker Compose CLI Plugin"
 
 # Verify Docker and Docker Compose installation
-run_command "docker --version && docker-compose --version" "Verifying Docker and Docker Compose installation"
+run_command "docker --version && docker compose --version" "Verifying Docker and Docker Compose installation"
 
 # Add user to Docker group
 run_command "sudo usermod -aG docker \$USER" "Adding user to Docker group"
